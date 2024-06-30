@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuickBookApp</string>
+    <string-array name="place_types_array">
+        <item>Barber</item>
+        <item>Hair Salon</item>
+        <item>Beauty Salon</item>
+        <item>Other</item>
+    </string-array>
+</resources>

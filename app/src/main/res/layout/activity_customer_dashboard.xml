@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonViewReservations"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:backgroundTintMode="add"
+        android:onClick="onViewReservationsButtonClick"
+        android:text="View My Reservations"
+        android:textColorLink="@color/colorPrimaryDark" />
+
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Search by place name..."
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/buttonAll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:text="Show All" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/buttonBarber"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:text="Barber" />
+
+        <Button
+            android:id="@+id/buttonHairSalon"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:text="Hair Salon" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+        <Button
+            android:id="@+id/buttonBeautySalon"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:text="Beauty Salon" />
+
+        <Button
+            android:id="@+id/buttonOther"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:text="Other" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/placesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
